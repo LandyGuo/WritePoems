@@ -190,6 +190,7 @@ def write_poem():
 def write_head_poem(heads):
 
 	def to_word(weights):
+		#注意:以下注释代码实现了按照分布的概率进行采样，也可用在word2vec中		
 		# t = np.cumsum(weights)
 		# s = np.sum(weights)
 		# sample = int(np.searchsorted(t, np.random.rand(1)*s))
